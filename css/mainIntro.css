@@ -1,0 +1,310 @@
+/*mainIntro.css*/
+
+/*------------header-------------*/
+#main-header {
+  position: relative;
+  height: calc(
+    100vh - 90px
+  ); /*화면의 100vh 에서 nav 태그의 크기만큼 빼서 한 화면 안에 구성하고자 함*/
+  /*그라데이션*/
+  background: linear-gradient(to bottom, #ffffff, #bdc8e3);
+}
+
+.upper-main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.upper-main-header h1 {
+  font-family: "Cinzel";
+  font-size: 40px;
+  font-weight: 700;
+  color: #374d81;
+}
+
+/*.main-header-title 과 .main-header-logo가 가로로 나란히 보이게 하기 위한 설정*/
+.middle-main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-header-title,
+.main-header-logo {
+  flex: 1;
+}
+
+.main-header-title {
+  margin-left: 10%;
+}
+
+.main-header-logo {
+  margin-right: 10%;
+}
+
+.main-title,
+.sub-title {
+  display: flex;
+  align-items: center;
+  margin-left: 25%;
+}
+
+.main-title span {
+  background-color: white;
+  font-weight: 800;
+  color: #374d81;
+  margin: 0 20px 30px 0;
+}
+
+.main-title-tag {
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.heart-emoji {
+  font-size: 50px;
+  border-radius: 40px;
+  padding: 3%;
+}
+
+.sub-title span {
+  color: white;
+  font-size: 25px;
+  font-weight: 650;
+  padding: 7px 15px;
+  margin: 7px 20px 7px 0;
+  white-space: nowrap;
+}
+
+/* subtitle의 디자인의 변화를 주기 위한 3가지 class 설정 후, css 다르게 적용*/
+.round-border {
+  border-radius: 20px;
+  background-color: #5c64b7;
+}
+
+.no-round-border {
+  background-color: #374d81;
+}
+
+.half-round-border {
+  border-radius: 7px;
+  background-color: #90a2cf;
+}
+
+.main-header-logo img {
+  width: 300px;
+  height: auto;
+}
+
+/*화살표 아래 버튼*/
+.lower-main-header,
+.main-section-article-button {
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translateX(-50%);
+}
+
+#main-header-button {
+  margin-top: 0;
+}
+
+.btn-scroll-down {
+  background-color: transparent;
+  border: none;
+}
+
+/*---------------main-section---------------*/
+/*---------selfIntro-article-----------*/
+#selfIntro-article {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.article-header h2 {
+  font-family: "Cinzel";
+  font-weight: 700;
+  font-size: 40px;
+  color: #374d81;
+
+  display: inline-block;
+  margin: 50px 70px;
+}
+
+.article-body {
+  display: flex;
+}
+
+.self-intro-imgs,
+.self-intro-explanation {
+  flex: 1;
+  height: 100%;
+}
+
+.self-intro-imgs {
+  position: relative;
+  border-radius: 10px;
+  margin: 10px 0 10px 15%;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.self-intro-imgs-list {
+  overflow-x: auto; /* 가로 스크롤바만 표시 */
+  overflow-y: hidden; /* 세로 스크롤바 숨김 */
+  white-space: nowrap;
+  width: 400px;
+  height: 500px;
+
+  font-size: 0;
+  /* 공백 제거: <img> 인라인 요소 > 인라인 요소들 사이에 줄바꿈> 공백으로 인지 > 약간의 빈틈이 생김> 0을 주면 공백 문자를 표시할 공간이 없어짐 */
+}
+
+/*스크롤 바 안보이도록 설정*/
+/* Chrome, Safari 등 웹킷 기반 브라우저 */
+.self-intro-imgs-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+.self-intro-imgs-list {
+  scrollbar-width: none;
+}
+
+/* Edge, Internet Explorer 11 */
+.self-intro-imgs-list {
+  -ms-overflow-style: none;
+}
+
+/*이미지 width 고정*/
+.self-intro-imgs-list img {
+  width: 400px;
+}
+
+/*좌우 버튼*/
+.btn-scroll-left,
+.btn-scroll-right {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 17.5px;
+  border: 3px solid #90a2cf;
+  cursor: pointer;
+
+  top: 50%;
+}
+
+.btn-scroll-left {
+  left: 50px;
+}
+
+.btn-scroll-right {
+  left: 370px;
+}
+
+.self-intro-explanation {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 5%;
+}
+
+.self-intro-explanation-title {
+  display: inline-block;
+}
+
+.self-intro-explanation-title li {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: white;
+  margin: 0 5px 20px 0;
+  width: fit-content; /*해당 content에 맞춰 너비 조정*/
+}
+
+.self-intro-explanation-list {
+  margin-top: auto;
+  font-size: 22px;
+}
+
+/*자기 소개 목차*/
+.self-intro-explanation-list dt {
+  float: left;
+  clear: left;
+  width: 90px;
+  font-weight: 800;
+  margin-top: 25px;
+
+  color: #90a2cf;
+}
+
+/*자기 소개 내용*/
+.self-intro-explanation-list dd {
+  margin-left: 100px; /* dt 요소의 너비(90px) + 간격(10px)만큼 왼쪽으로 이동 */
+  margin-top: 25px;
+}
+
+/*--------motivation-article--------*/
+#motivation-article {
+  position: relative;
+  height: 100vh; /*화면 길이만큼 설정*/
+  background-color: #90a2cf;
+}
+
+#motivation-article .article-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 71px 0;
+  margin: 0 7%;
+
+  text-align: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: white;
+}
+
+#motivation-article .article-body p {
+  font-size: 20px;
+  line-height: 3;
+}
+
+/*project.html로 넘어갈 수 있는 손 이모지 버튼*/
+.move-to-project {
+  width: 200px;
+  font-size: 30px;
+  border: none;
+  display: inline-block;
+  /*애니메이션 설정*/
+  /* moveRight 애니메이션을 1.5초 동안 선형적으로 반복하도록 설정*/
+  animation: moveRight 1.5s linear infinite;
+  background-color: white;
+}
+
+/*오른쪽으로 움직이도록 keyframe 정의*/
+/*시작과 끝을 0으로 설정하여 움직이는 것처럼 표현*/
+@keyframes moveRight {
+  /*애니메이션의 시작 지점*/
+  0% {
+    transform: translateX(0);
+  }
+
+  /*애니메이션의 중간 지점*/
+  50% {
+    transform: translateX(20px); /*x축으로 20xp 이동*/
+  }
+
+  /*애니메이션의 끝 지점*/
+  100% {
+    transform: translateX(0);
+  }
+}

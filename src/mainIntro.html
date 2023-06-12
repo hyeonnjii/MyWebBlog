@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YHJ's Blog</title>
+    <!--favicon 설정-->
+    <link rel="shortcut icon" href="../assets/favicon/my_favicon.png" />
+    <!--초기화 css-->
+    <link rel="stylesheet" href="../css/initial.css" />
+    <!--navigation css-->
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <!--footer css-->
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <!--mainIntro.css-->
+    <link rel="stylesheet" href="../css/mainIntro.css" />
+
+    <!--JQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--스크롤 JS-->
+    <script src="../javascripts/scroll.js"></script>
+    <!--hover JS-->
+    <script src="../javascripts/hover.js"></script>
+
+    <script>
+      // project.html 로의 이동 기능
+      $(document).ready(function () {
+        $(".move-to-project").click(function moveToProject() {
+          event.preventDefault(); // 기본 동작 방지
+          window.location.href = `project.html`;
+        });
+
+        // hover시 css 변경
+        $(".move-to-project").hover(
+          function () {
+            $(this).css("cursor", "pointer");
+
+            //
+            $(this).css("animation-play-state", "paused");
+          },
+          function () {
+            $(this).css("cursor", "");
+            $(this).css("animation-play-state", "");
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!----------navigation---------->
+      <nav id="main-navigation">
+        <!--메인로고 -->
+        <div class="pull-left">
+          <a class="main-nav-logo" href="mainIntro.html">
+            <span
+              ><img
+                class="main-logo"
+                src="../assets/imgs/logo/main_logo.png"
+                alt="Hyeonji's Blog"
+            /></span>
+          </a>
+        </div>
+        <!--Outer/inner menu 및 검색창-->
+        <div class="pull-right">
+          <!--Outer/inner menu-->
+          <ul class="outer-menu">
+            <li class="outer-menu-item">
+              <span class="menu-title">#About</span>
+              <ul class="inner-menu">
+                <li class="inner-menu-item">
+                  <a href="#selfIntro-article">Self-Intro</a>
+                </li>
+                <li class="inner-menu-item">
+                  <a href="#motivation-article">Motivation</a>
+                </li>
+              </ul>
+            </li>
+            <li class="outer-menu-item">
+              <span class="menu-title">#Project</span>
+              <ul class="inner-menu">
+                <li class="inner-menu-item">
+                  <a href="project.html#otott-article">OTOTT</a>
+                </li>
+                <li class="inner-menu-item">
+                  <a href="project.html#streetCatFighter-article"
+                    >StreetCatFighter</a
+                  >
+                </li>
+                <li class="inner-menu-item">
+                  <a href="project.html#skkryptoNFT-article">Skkrypto NFT</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!--검색창-->
+          <div class="search-bar">
+            <form>
+              <input type="text" class="input-search" />
+              <input type="submit" class="input-search-submit" value="Search" />
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-----------header----------->
+      <header>
+        <div id="main-header">
+          <div class="upper-main-header">
+            <h1>Welcome to Hyeonji's Blog:)</h1>
+          </div>
+          <div class="middle-main-header">
+            <div class="main-header-title">
+              <div class="main-title">
+                <span class="main-title-tag">#HyeonJi's</span>
+                <span class="main-title-tag">#Blog</span>
+                <span class="heart-emoji">♥</span>
+              </div>
+              <div class="sub-title">
+                <span class="round-border">#Challenging</span>
+                <span class="no-round-border">#Developer</span>
+              </div>
+              <div class="sub-title">
+                <span class="no-round-border">#BlockChain</span>
+                <span class="half-round-border">#Grit</span>
+                <span class="round-border">#Smiley</span>
+              </div>
+              <div class="sub-title">
+                <span class="half-round-border">#Data Analysis</span>
+                <span class="no-round-border">#Artificial Intelligence</span>
+              </div>
+            </div>
+
+            <!--로고-->
+            <div class="main-header-logo">
+              <img
+                src="../assets/imgs/logo/favicon_logo.png"
+                alt="Hyeonji's Blog"
+              />
+            </div>
+          </div>
+        </div>
+        <!--화살표 아래 버튼을 통해 scrollDown 기능 사용-->
+        <div class="lower-main-header">
+          <div id="main-header-button">
+            <button type="button" class="btn-scroll-down">
+              <span class="arrow down"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!---------content--------->
+      <div id="content">
+        <!-----------section---------->
+        <section id="main-section">
+          <!---------self-intro article----------->
+          <article id="selfIntro-article">
+            <div class="article-header">
+              <h2>Self-Intro</h2>
+            </div>
+            <div class="article-body">
+              <div class="self-intro-imgs">
+                <button type="button" class="btn-scroll-left">
+                  <span class="arrow left"></span>
+                </button>
+                <div class="self-intro-imgs-list">
+                  <img src="../assets/imgs/selfie/selfie1.jpg" />
+                  <img src="../assets/imgs/selfie/selfie2.jpg" />
+                  <img src="../assets/imgs/selfie/selfie3.jpg" />
+                  <img src="../assets/imgs/selfie/selfie4.jpg" />
+                </div>
+                <button type="button" class="btn-scroll-right">
+                  <span class="arrow right"></span>
+                </button>
+              </div>
+              <div class="self-intro-explanation">
+                <div class="self-intro-explanation-title">
+                  <ul>
+                    <li class="no-round-border">#자기소개</li>
+                    <li class="half-round-border">#첫도입</li>
+                    <li class="round-border">#나는야</li>
+                    <li class="half-round-border">#YHJ</li>
+                  </ul>
+                </div>
+                <dl class="self-intro-explanation-list">
+                  <dt>이름</dt>
+                  <dd>유현지</dd>
+                  <dt>학교</dt>
+                  <dd>SKKU(SUNGKYUNKWAN University)</dd>
+                  <dt>전공</dt>
+                  <dd>글로벌경영학과/인공지능융합학과</dd>
+                  <dt>사용 언어</dt>
+                  <dd># HTML #CSS #Java/JavaScript <br />#Solidity #Python</dd>
+                </dl>
+              </div>
+              <div class="main-section-article-button">
+                <button type="button" class="btn-scroll-down">
+                  <span class="arrow down"></span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!----------motivation article------------->
+          <article id="motivation-article">
+            <div class="article-header">
+              <h2>Motivation</h2>
+            </div>
+            <div class="article-body">
+              <p class="motivation-explanation">
+                안녕하세요, 저는 성균관대학교 글로벌경영학과/인공지능융합학과에
+                재학 중인 유현지라고 합니다.<br />
+                한 학기동안 안용학 교수님의 '웹프로그래밍실습' 수업 때 배운 것을
+                토대로 해당 웹사이트를 제작하였습니다.<br />
+                해당 사이트는 저만의 Blog를 만드는 것을 주제로, 오직
+                HTML/CSS/JS만을 사용하여 만들어졌습니다.<br />
+                아직까지는 많이 부족하지만, 배운 것을 최대한 활용하고자 여러
+                기능을 사용하고자 하였습니다<br />
+                부족하지만, 넓은 아량으로 귀엽게 봐주세요💓 피드백도
+                환영입니다😃
+                <br /><br />
+                그럼 어떤 프로젝트를 진행했는지도 확인하러 가볼까요?!(손가락
+                클릭 >>)
+                <span class="move-to-project">
+                  <button type="button" class="move-to-project">👉👉👉</button>
+                </span>
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <!-------------footer------------->
+      <footer id="main-footer">
+        <div class="footer-center">
+          <ul class="footer-listitem-center">
+            <li class="footer-logo">
+              HyeonJi's BLOG
+              <img
+                src="../assets/imgs/logo/favicon_logo.png"
+                id="footer-logo"
+                alt="footer-image"
+              />
+            </li>
+            <li class="footer-copyrights">
+              <span> COPYRIGHTS ⓒ HyeonJi Yoo </span>
+            </li>
+            <li class="footer-link">
+              <a href="#" title="github_address">
+                <img
+                  id="footer-github-icon"
+                  src="../assets/imgs/logo/github_logo.png"
+                  alt="github_address"
+                />
+              </a>
+            </li>
+            <li class="footer-link">
+              <!--mailto 사용으로 해당 이메일로 바로 연결될 수 있도록 지원-->
+              <a
+                class="email-link"
+                href="mailto: yoohyeonji12@gmail.com"
+                title="yoohyeonji12@gmail.com"
+                ><img
+                  id="footer-email-icon"
+                  src="../assets/imgs/logo/mail_logo.png"
+                  alt="mail_address"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

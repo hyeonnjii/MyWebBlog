@@ -1,0 +1,22 @@
+{
+  "name": "mywebblog",
+  "version": "1.0.0",
+  "description": "'웹프로그래밍실습' 과제",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyeonnjii/MyWebBlog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyeonnjii/MyWebBlog/issues"
+  },
+  "homepage": "https://github.com/hyeonnjii/MyWebBlog#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

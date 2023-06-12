@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YHJ's Project</title>
+    <!--favicon 설정-->
+    <link rel="shortcut icon" href="../assets/favicon/my_favicon.png" />
+    <!--초기화 css-->
+    <link rel="stylesheet" href="../css/initial.css" />
+    <!--navigation css-->
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <!--footer css-->
+    <link rel="stylesheet" href="../css/footer.css" />
+
+    <!--project css-->
+    <link rel="stylesheet" href="../css/project.css" />
+
+    <!--JQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--hover JS-->
+    <script src="../javascripts/hover.js"></script>
+  </head>
+  <body>
+    <!----------navigation---------->
+    <nav id="main-navigation">
+      <!--메인로고 -->
+      <div class="pull-left">
+        <a class="main-nav-logo" href="mainIntro.html">
+          <span
+            ><img
+              class="main-logo"
+              src="../assets/imgs/logo/main_logo.png"
+              alt="Hyeonji's Blog"
+          /></span>
+        </a>
+      </div>
+      <!--Outer/inner menu 및 검색창-->
+      <div class="pull-right">
+        <!--Outer/inner menu-->
+        <ul class="outer-menu">
+          <li class="outer-menu-item">
+            <span class="menu-title">#About</span>
+            <ul class="inner-menu">
+              <li class="inner-menu-item">
+                <a href="mainIntro.html#selfIntro-article">Self-Intro</a>
+              </li>
+              <li class="inner-menu-item">
+                <a href="mainIntro.html#motivation-article">Motivation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="outer-menu-item">
+            <span class="menu-title">#Project</span>
+            <ul class="inner-menu">
+              <li class="inner-menu-item">
+                <a href="#otott-article">OTOTT</a>
+              </li>
+              <li class="inner-menu-item">
+                <a href="#streetCatFighter-article">StreetCatFighter</a>
+              </li>
+              <li class="inner-menu-item">
+                <a href="#skkryptoNFT-article">Skkrypto NFT</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!--검색창-->
+        <div class="search-bar">
+          <form>
+            <input type="text" class="input-search" />
+            <input type="submit" class="input-search-submit" value="Search" />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--page-wrapper로 전체 레이아웃 설정-->
+    <div id="page-wrapper">
+      <!--------header----------->
+      <header id="main-header">
+        <div class="sub-header">
+          <h1 class="sub-title">My Projects</h1>
+          <p class="sub-description">Created by HyeonJi Yoo</p>
+        </div>
+      </header>
+      <!----------content------------>
+      <div id="content">
+        <!-----------section----------->
+        <section id="main-section">
+          <!-------article의 nav----------->
+          <div class="article-navigation">
+            <ul class="article-menu">
+              <a href="#otott-article"
+                ><li class="article-menu-item">OTOTT</li></a
+              >
+              <a href="#streetCatFighter-article">
+                <li class="article-menu-item">StreetCatFighter</li></a
+              >
+              <a href="#skkryptoNFT-article">
+                <li class="article-menu-item">Skkrypto NFT</li></a
+              >
+            </ul>
+          </div>
+          <!-------otott-article---------->
+          <article id="otott-article">
+            <div class="article-header">
+              <h1 class="article-title">OTT 통합 정보 제공 사이트, OTOTT</h1>
+              <p class="article-date">2023년 06월 01일</p>
+            </div>
+            <div class="article-body">
+              <img id="otott_img" src="../assets/imgs/project/otott_img.png" />
+              <br />
+              <br />
+              <p>
+                해당 프로젝트는 '웹프로그래밍실습' 팀 프로젝트로 진행한
+                프로젝트입니다.
+                <br />해당 프로젝트는 OTT 플랫폼들의 통합적인 정보를 제공해주는
+                웹사이트를 구현하는 것으로, 넷플릭스, 티빙, 왓챠 등 6곳의 플랫폼
+                여기저기에 흩어져 있어 원하는 작품을 찾기 불편했던 기존의
+                문제점을 해결해보고자 기획하게 하였습니다. 해당 서비스의 목적은,
+                여러 OTT 작품들을 하나의 웹사이트에서 확인 가능한 서비스 제공이
+                목적이었으며,<br /><br />
+                - 통합 실시간 순위 차트 제공<br />
+                - OTT별 / 장르별 차트 별도 제공 <br />
+                - 사용자의 무드에 맞게 흥미를 끄는 주제로 추천해주는 EDITORS
+                PICK 작품들 제공 <br />
+                - 개별 작품의 기본 정보, 별점 및 리뷰 확인 기능 제공 <br />
+                - 개별 작품을 감상 가능한 OTT 플랫폼 리스트 제공 <br /><br />
+
+                다음과 같은 서비스를 제공하고자 하였습니다.
+              </p>
+            </div>
+          </article>
+          <!-------streetCatFighter-article---------->
+          <article id="streetCatFighter-article">
+            <div class="article-header">
+              <h1 class="article-title">Java Mini Game, StreetCatFighter</h1>
+              <p class="article-date">2023년 06월 01일</p>
+            </div>
+            <div class="article-body">
+              <img
+                id="street_img"
+                src="../assets/imgs/project/streetCatFighter_img.png"
+              />
+              <br />
+              <br />
+              <p>
+                해당 프로젝트는 '자바프로그래밍실습'의 팀 프로젝트로 진행한
+                Street Cat Fighter 게임 만들기 프로젝트입니다.<br />
+                해당 프로젝트는 두명의 player 가 각각의 캐릭터와 key 버튼을
+                가지고 주어진 10초동안 더 빨리 누르는 사람이 이기는 게임으로서,
+                간단해보이지만 승부욕을 자극하는 플래시 게임입니다. 따라서, 요즘
+                부담없이 게임을 간단히 즐기고 싶은 사용자들에게 특히 더 매력적일
+                수 있습니다. 해당 게임에서는 여러 기능을 구현하고 있는데,
+                <br /><br />
+                - Panel Swap기능<br />
+                - Count Down Thread<br />
+                - 게임 카운트 다운<br />
+                - 한 플레이어와 지속적인 게임 여부에 따른 여러 옵션<br />
+                - 키 버튼을 누를 경우 반응하는 캐릭터<br />
+                <br />
+
+                등이 있습니다.
+              </p>
+            </div>
+          </article>
+          <!-------skkryptoNFT-article---------->
+          <article id="skkryptoNFT-article">
+            <div class="article-header">
+              <h1 class="article-title">
+                The Ongoing project of the Skkrypto,<br />
+                the Blockchain Accademic Socieity in SKKU
+              </h1>
+              <p class="article-date">2023년 02월 10일 ~</p>
+            </div>
+            <div class="article-body">
+              <img
+                id="skkrypto_img"
+                src="../assets/imgs/project/skkrypto_img.jpg"
+              />
+              <br />
+              <br />
+              <p>
+                해당 프로젝트는 수업과는 관련없지만, 현재 블록체인 학회
+                '스크립토'에서 진행중인 학회원 NFT 발행 프로젝트입니다.<br />
+                현 프로젝트는 제가 속해있는 스크립토에서 자체적으로 진행 중인
+                프로젝트이며, 아직까지 진행 중에 있습니다. 간단하게 프로젝트에
+                대하여 설명드리자면,<br />
+                학회원들이 스크립토에서 진행한 여러 활동을 성공적으로 마칠
+                때마다, 해당 활동에 대한 인증으로 NFT를 발급, 이후 스크립토
+                활동이 끝난 후에는 일괄적으로 해당 NFT의 링크가 들어가 있는
+                수료증으로 받음으로써, 학회원들의 참여를 높이고자한 목적으로
+                만들어진 프로젝트입니다.<br />
+                <br />
+                현재 스크립토는 2022-2학기 2023-1학기 명품학회로 선정되며
+                블록체인과 관련된 여러 활동들을 진행하고 있습니다.
+              </p>
+              <br />
+              <p>위의 사진은 스크립토 개발팀 세션 진행 사진입니다.</p>
+            </div>
+          </article>
+        </section>
+
+        <!---------aside----------->
+        <aside id="main-aside">
+          <span class="arrow left"></span>
+          <span class="aside-title"> Quick Menu</span>
+          <div class="aside-list">
+            <h3>카테고리</h3>
+            <ul>
+              <li><a href="#">OTOTT</a></li>
+              <li><a href="#">StreetCatFighter</a></li>
+              <li><a href="#">Skkrypto NFT</a></li>
+            </ul>
+          </div>
+          <div class="aside-list">
+            <h3>최근 글</h3>
+            <ul>
+              <li><a href="#">NFT란?</a></li>
+              <li><a href="#">JQuery 구현한 미니게임만들기</a></li>
+              <li><a href="#">심화: React 배우기</a></li>
+              <li><a href="#">방문자 데이터 분석</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <!-------------footer------------->
+      <footer id="main-footer">
+        <div class="footer-center">
+          <ul class="footer-listitem-center">
+            <li class="footer-logo">
+              HyeonJi's BLOG
+              <img
+                src="../assets/imgs/logo/favicon_logo.png"
+                id="footer-logo"
+                alt="footer-image"
+              />
+            </li>
+            <li class="footer-copyrights">
+              <span> COPYRIGHTS ⓒ HyeonJi Yoo </span>
+            </li>
+            <li class="footer-link">
+              <a href="#" title="github_address">
+                <img
+                  id="footer-github-icon"
+                  src="../assets/imgs/logo/github_logo.png"
+                  alt="github_address"
+                />
+              </a>
+            </li>
+            <li class="footer-link">
+              <!--mailto 사용으로 해당 이메일로 바로 연결될 수 있도록 지원-->
+              <a
+                class="email-link"
+                href="mailto: yoohyeonji12@gmail.com"
+                title="yoohyeonji12@gmail.com"
+                ><img
+                  id="footer-email-icon"
+                  src="../assets/imgs/logo/mail_logo.png"
+                  alt="mail_address"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

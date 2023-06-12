@@ -1,0 +1,184 @@
+/*project.css*/
+
+/*navigation 추가 부분*/
+/*inner menu 가 안보이는 문제를 해결*/
+.outer-menu-item:hover .inner-menu {
+  display: inline-block;
+}
+
+/*블로그 형식의 레이아웃 설정*/
+body {
+  width: 960px;
+  margin: 0 auto;
+  background: #d7ddee;
+}
+
+#page-wrapper {
+  background: white;
+  margin: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+/*header와 sub-title 설정*/
+#main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 50px;
+}
+.sub-title {
+  font-size: 30px;
+  color: #181818;
+}
+.sub-description {
+  font-size: 15px;
+  font-weight: 500;
+  color: #383838;
+}
+
+/*-----content------*/
+#content {
+  overflow: hidden;
+}
+#main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+
+  position: relative;
+}
+#main-aside {
+  width: 200px;
+}
+
+/*----article navigation 설정----*/
+.article-navigation {
+  display: flex;
+  justify-content: center; /*수평 가운데 정렬*/
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+}
+
+.article-menu-item {
+  float: left;
+  position: relative;
+
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 5px 20px;
+
+  color: #374d81;
+}
+
+.article-menu-item:hover {
+  background: #374d81;
+  color: white;
+}
+
+/*----article----*/
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 10px 20px 20px;
+  border-bottom: 1px solid #c8c8c8;
+}
+.article-header {
+  width: 100%;
+  padding: 20px 0;
+}
+.article-title {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.article-date {
+  float: right; /*오른쪽으로 정렬*/
+  padding-right: 30px;
+  font-size: 13px;
+}
+.article-body {
+  text-align: center;
+  font-size: 14px;
+}
+
+.article-body p {
+  text-align: left;
+}
+
+/*article에 들어갈 image들은 모두 같은 width로 설정*/
+#otott_img,
+#street_img,
+#skkrypto_img {
+  width: 430px;
+  height: auto;
+}
+
+/*------------aside-----------*/
+#main-aside {
+  position: fixed; /*항상 오른쪽 하단 위치에 고정*/
+  top: 90%;
+  right: -100px; /* 오른쪽에서 시작하도록 설정 */
+  transform: translateY(-50%);
+  width: 250px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+
+/* 기존, hover 시 보여지는 것을 설정*/
+.aside-title {
+  padding-left: 20px;
+}
+
+#main-aside:hover {
+  right: 0;
+  top: 76%;
+}
+
+#main-aside::before {
+  opacity: 1;
+}
+
+#main-aside:hover .aside-title {
+  display: none;
+}
+
+#main-aside:hover .aside-list {
+  display: block;
+  padding-left: 40px;
+}
+
+#main-aside .aside-list {
+  display: none;
+}
+
+.aside-list h3 {
+  color: #90a2cf;
+  font-weight: 800;
+  padding: 10px 0;
+}
+
+.aside-list a {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.aside-list a:hover {
+  background-color: #d7ddee;
+}

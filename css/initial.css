@@ -1,0 +1,62 @@
+/* 초기화 css*/
+
+/*구글 폰트: 나눔 고딕체*/
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap");
+
+/*구글 폰트: Cinzel체*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap");
+
+/*페이지 초기화 및 기본 폰트 설정*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", sans-serif, serif;
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  color: #949494;
+  background-color: white;
+}
+
+/*모든 list item 과 a태그에 적용*/
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black; /* 방문 후의 색깔도 검은색으로 통일 */
+}
+
+/*화살표 및 화살표 방향 정의*/
+.arrow {
+  border: solid #90a2cf;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+}
+
+.down {
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.right {
+  padding: 5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  padding: 5px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

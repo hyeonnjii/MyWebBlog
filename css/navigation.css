@@ -1,0 +1,120 @@
+/*navigation css*/
+
+#main-navigation {
+  height: 90px;
+  position: relative;
+}
+
+/*-------pull-left--------*/
+.pull-left {
+  float: left;
+}
+
+.main-nav-logo .main-logo {
+  float: left;
+  position: relative;
+  padding: 10px 20px 0 20px;
+  width: 120px;
+}
+
+/*-------pull-right--------*/
+.pull-right {
+  /*왼쪽 정렬이지만, 오른쪽으로 배치하기 위함*/
+  display: flex;
+  justify-content: flex-end; /*자식 요소들 > 가로 방향으로 정렬 시, 오른쪽 끝으로 정렬*/
+}
+
+/*outer-menu*/
+.outer-menu-item {
+  margin-top: 50px;
+  margin-right: 20px;
+  padding-bottom: 4px;
+  width: 120px;
+  height: 30px;
+  float: left;
+  position: relative;
+}
+
+.outer-menu-item:hover {
+  background: #90a2cf;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.menu-title {
+  display: block;
+  height: 30px;
+  line-height: 27px;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+/*inner-menu */
+.inner-menu {
+  display: none; /*JS로 hover 시에만 보이게 설정을 위함*/
+  position: absolute;
+  top: 100%; /*부모 요소인 .outer-menu-item의 하단에 정확히 위치시키기 위한 설정*/
+  left: 0;
+  width: 100%; /*부모 요소인 .outer-menu-item의 width 와 일치시키기 위함*/
+  background: white;
+  box-shadow: 0 0 4px 4px rgb(144, 162, 207, 0.5);
+  z-index: 1000;
+  text-align: center;
+  font-size: 14px;
+}
+
+.inner-menu-item > a {
+  display: block;
+  height: 30px;
+  text-align: center;
+  padding: 5px 10px;
+  color: black;
+}
+
+.inner-menu-item > a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: rgb(144, 162, 207);
+}
+
+/*검색 창*/
+.search-bar {
+  display: inline-block;
+  height: 40px;
+  padding: 7px;
+  margin-top: 20px;
+}
+
+.input-search {
+  display: block;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px 0 0 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  width: 150px;
+  height: 24px;
+  padding: 0 0 0 10px;
+  font-size: 15px;
+  color: #555555;
+}
+
+/*focus를 받았을 경우 css 속성 정의*/
+.input-search:focus {
+  border-color: rgb(144, 162, 207);
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.input-search-submit {
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  border-radius: 0 15px 15px 0;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  margin-left: -1px;
+}
+.input-search-submit:hover {
+  cursor: pointer;
+  background-color: rgb(144, 162, 207, 0.5);
+}
